@@ -9,7 +9,7 @@ total_5 = 0
 breads = {
     "barbari": 1000,
     "sangak" : 3000,
-    "lavash" : 500,
+    "lavash" : 500,     #this is dict
     "taftoon": 2500,
     "shirmal": 1750
 }
@@ -25,7 +25,7 @@ card_number = input ("please insert your card: ")
 password_1 = input ("please create your password: ")
 password_2 = input ("please enter your password: ")
 self_checkout = "notdefined"
-#####################################
+##############start for password #######################
 for password in range(2):
     while password_1 != password_2:
         print("wrong password")
