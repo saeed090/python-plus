@@ -1,5 +1,4 @@
 #saeed bakery in python plus class
-#this is my project
 total_1 = 0
 total_2 = 0
 total_3 = 0     #this is add some one
