@@ -70,3 +70,4 @@ while self_checkout != "done":
     switch=1
 
 print (f"so your total is {total}")
+#the end
