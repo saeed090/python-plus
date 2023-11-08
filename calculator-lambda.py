@@ -1,4 +1,4 @@
-#Pyhton Function Calculator
+#Pyhton Lambda Calculator
 
 print("Welcome to calculator")
 print("---------------------")
