@@ -1,3 +1,4 @@
+#rock - paper - scissors
 import random
 print("rock ...")
 print("paper ...")
