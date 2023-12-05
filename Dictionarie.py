@@ -1,4 +1,4 @@
-#Dictionarie - s
+#Dictionarie
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
