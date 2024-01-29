@@ -24,6 +24,6 @@ while True: # new
         else:
             print("Rock smashes scissors! You lose.")
 
-    play_again = input("Play again? (y/n): ") # new
-    if play_again.lower() != "y": # new
+    play_again = input("Play again? (y/n): ")
+    if play_again.lower() != "y":
         break # new
