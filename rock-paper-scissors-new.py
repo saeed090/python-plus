@@ -1,3 +1,4 @@
+#
 import random
 
 while True: # new
