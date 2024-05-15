@@ -1,4 +1,4 @@
-#Fisherman
+###Fisherman
 
 import random
 fish = int(input("How many kilograms of fish did you get?"))
