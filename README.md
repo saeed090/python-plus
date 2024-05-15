@@ -1,1 +1,1 @@
-# bakery project in python + class
+#python + class
