@@ -13,6 +13,12 @@ b = 200
 if b > a:
   print("b is greater than a")
 ####################################################
+number1 = int(input("plz enter your first number: "))
+number2 = int(input("plz enter your sec number: "))
+
+if number1 > number2:
+  print("number1 is greater than number2")
+####################################################
 Elif
 The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
 
@@ -23,6 +29,17 @@ if b > a:
   print("b is greater than a")
 elif a == b:
   print("a and b are equal")
+###################################################
+user_rank = int(input("plz enter your rank: "))
+
+if user_rank == 1:
+    print("you get gold medal")
+elif user_rank == 2:
+    print("you get silver medal")
+elif user_rank == 3:
+    print("you get boronz medal")
+else:
+    print("plz enter number 1 or 2 or 3")
 ####################################################
 if a > b: print("a is greater than b")
 ####################################################
