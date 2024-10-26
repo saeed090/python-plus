@@ -4,7 +4,7 @@
 #Less than or equal to: a <= b
 #Greater than: a > b
 #Greater than or equal to: a >= b
-###################################################
+##################################################
 ExampleGet your own Python Server
 If statement:
 
@@ -12,13 +12,13 @@ a = 33
 b = 200
 if b > a:
   print("b is greater than a")
-####################################################
+###################################################
 number1 = int(input("plz enter your first number: "))
 number2 = int(input("plz enter your sec number: "))
 
 if number1 > number2:
   print("number1 is greater than number2")
-####################################################
+###################################################
 Elif
 The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
 
@@ -29,7 +29,7 @@ if b > a:
   print("b is greater than a")
 elif a == b:
   print("a and b are equal")
-###################################################
+##################################################
 user_rank = int(input("plz enter your rank: "))
 
 if user_rank == 1:
