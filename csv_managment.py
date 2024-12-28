@@ -1,5 +1,4 @@
-## file in csv start ower core
-## start  
+## file in csv start ower core  
 
 import csv
 
