@@ -1,5 +1,5 @@
-## file in csv and strat over near
-
+## file in csv start ower core
+## start  
 
 import csv
 
