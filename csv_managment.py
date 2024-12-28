@@ -1,3 +1,6 @@
+## file in csv and strat over near
+
+
 import csv
 
 with open("data.csv" , "w") as file:
