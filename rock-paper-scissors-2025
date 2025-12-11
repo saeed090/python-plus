@@ -1,0 +1,83 @@
+import random
+import time
+
+def get_user_choice():
+    """Get and validate user input"""
+    while True:
+        choice = input("Enter your choice (rock, paper, scissors, or 'quit' to exit): ").lower()
+        if choice in ['rock', 'paper', 'scissors', 'quit']:
+            return choice
+        print("Invalid choice! Please try again.")
+
+def get_computer_choice():
+    """Generate computer's random choice"""
+    return random.choice(['rock', 'paper', 'scissors'])
+
+def determine_winner(user_choice, computer_choice):
+    """Determine the winner based on game rules"""
+    if user_choice == computer_choice:
+        return "tie"
+    
+    winning_combinations = {
+        'rock': 'scissors',
+        'paper': 'rock',
+        'scissors': 'paper'
+    }
+    
+    if winning_combinations[user_choice] == computer_choice:
+        return "user"
+    else:
+        return "computer"
+
+def display_result(user_choice, computer_choice, winner):
+    """Display the game result"""
+    print(f"\nYou chose: {user_choice}")
+    print(f"Computer chose: {computer_choice}")
+    
+    if winner == "tie":
+        print("It's a tie! 🤝")
+    elif winner == "user":
+        print("You win! 🎉")
+    else:
+        print("Computer wins! 💻")
+
+def main():
+    """Main game loop"""
+    print("🎮 Welcome to Rock Paper Scissors! 🎮")
+    print("=" * 40)
+    
+    user_score = 0
+    computer_score = 0
+    ties = 0
+    
+    while True:
+        user_choice = get_user_choice()
+        
+        if user_choice == 'quit':
+            break
+            
+        computer_choice = get_computer_choice()
+        winner = determine_winner(user_choice, computer_choice)
+        
+        display_result(user_choice, computer_choice, winner)
+        
+        # Update scores
+        if winner == "user":
+            user_score += 1
+        elif winner == "computer":
+            computer_score += 1
+        else:
+            ties += 1
+        
+        # Display current score
+        print(f"\nScore - You: {user_score} | Computer: {computer_score} | Ties: {ties}")
+        print("-" * 40)
+        
+        # Add a small delay for better UX
+        time.sleep(1)
+    
+    print("\nThanks for playing! 👋")
+    print(f"Final Score - You: {user_score} | Computer: {computer_score} | Ties: {ties}")
+
+if __name__ == "__main__":
+    main()
